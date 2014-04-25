@@ -43,45 +43,25 @@ Predefined symbols:
  * set - placeholder for any set
  * type - synonim for set
  * def - defines set/type
-
-\def{Zero}
-\def{One}
-\def{Two}
-\def{Infinity}
-
-\begin[Natural]{def}
-\Ordered
-\MonotonicallyAdditive
-\Infinite
-\Multiplicative
-\HasOne
-\end{def}
-
-\begin[Relation]{def}
-\parameters{Two}
-\end{def}
-
-\begin[In:Relation]{def}
-
-\end{def}
-
-\begin[Order:Relation]{def}
-\Relation
-\end{def}
-
-\begin[Additive]{def}
-\end{def}
-
-
-\begin{definition}
-\name{Set}
-\weaksubobject[Additive,Multiplicative,Comparable]{Element}
-\end{definition}
-
-\begin{definition}
-\name{Manifold}
-\specialcaseof{Set}
-\weaksubobject{ConsistantCharts}
-\end{definition}
+ * : - inheritance. Used in new sets/types definitions and it should be treated as a macros which copies all of the parents contents
+ * () - category. Used to extend existing type/set definition in the presence of other property. I.e. (Positive) part of definition applies to the type which has \Positive in its definition
+ * () - return type, i.e. (a+b) - represents type you get after applying + operation to a and b
+ * . - property accessor. 
+ * module - module is a was to define implicit category, i.e. on every page where it is included every definition should verify
+ * include - load module, means all of the symbols on the page where the module included should be verified by every definition of the module
+ * parameters - description of set of parameters
+ * parameter - description of parameter
+ * return - description of return
+ * symbol - symbol specification
+ * alias - alias for the type
+ * any - element accessor. Property defined on these elements, should apply for any elements from the type/set
+ * exists - element accessor. Property defined on these elements, should apply for some elements from the type/set
+ * Parent - parent type
+ * Current - current type
+ * is - verification operation
+ * True, False - boolean results of verification operation is
+ * bool - set of boolean reaults
+ * or, and, not - typical logic operators on boolean results of verification
+ 
 
 
