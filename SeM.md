@@ -56,8 +56,8 @@ Predefined symbols:
  * alias - alias for the type
  * any - element accessor. Property defined on these elements, should apply for any elements from the type/set
  * exists - element accessor. Property defined on these elements, should apply for some elements from the type/set
- * Parent - parent type
- * Current - current type
+ * Current - current container type
+ * Self - current type
  * is - verification operation
  * True, False - boolean results of verification operation is
  * bool - set of boolean reaults
